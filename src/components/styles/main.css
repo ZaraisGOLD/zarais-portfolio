@@ -1,0 +1,25 @@
+section {
+    display: grid;
+    align-items: center;
+}
+
+.main__home,
+.main__about {
+    grid-template-columns: 30% 70% 1fr;
+}
+
+.main__home {
+    background-color: #fdafab;
+}
+
+.main__portfolio {
+    background-color: #a9a7d6;
+}
+
+.main__about {
+    background-color: #9FD1F0;
+}
+
+.main__contact {
+    background-color: #abcd5f;
+}
