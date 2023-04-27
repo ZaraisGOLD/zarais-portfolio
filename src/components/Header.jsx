@@ -15,7 +15,7 @@ const Header = () => {
 		<header>
 			<nav className="navbar">
 				<a className="navbar__logo" href="home">
-					<img src="/luna.svg" alt="logo" />
+					<img src="/sol.svg" alt="logo" />
 				</a>
 				<ul className="navbar__menu" >
 					<li className='navbar__menu--list'><a href="home">Home</a></li>
