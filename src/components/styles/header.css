@@ -1,12 +1,17 @@
+:root {
+    --height_nav: 60px;
+}
+
 .navbar {
     background-color: #f6f4f6;
     width: 100%;
-    height: 50px;
+    min-width: 300px;
+    height: var(--height_nav);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding: 1.5em;
+    padding: 1.5em 2em;
 }
 
 .navbar__logo {
@@ -35,7 +40,7 @@
     border-bottom-left-radius: 1rem;
 }
 
-.navbar__menu--show {
+.open {
     right: 0;
     transform: right 0.5s;
 }
@@ -55,15 +60,42 @@
 .bx-menu {
     color: #404040;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     cursor: pointer;
     z-index: 1;
 }
 
-/* .menu__icon--luna {
-    width: 100px;
+.navbar__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.icons__moonSun {
+    width: 40px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__icon--luna {
+    display: none;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.night {
+    display: block;
 }
 
 .menu__icon--sol {
-    width: 100px;
-} */
+    width: 40px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.day {
+    display: none;
+}
